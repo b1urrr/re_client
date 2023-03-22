@@ -1,0 +1,82 @@
+.re__recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 20rem;
+    background-color: var(--color-third);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.re__recipe-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.re__recipe-content_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.re__recipe-content .re__recipe-content_main-header, .re__recipe-content .re__recipe-content_main-price {
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: var(--color-primary);
+}
+
+.re__recipe-content h1:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.re__recipe-content p {
+    font-family: var(--font-family);
+    font-size: 17px;
+    line-height: 25px;
+    color: var(--color-primary);
+}
+
+.re__recipe-content_line {
+    border: 1px solid var(--color-second);
+    margin: 0 0 0.3rem 0
+}
+
+.re__recipe-content .re__recipe-content_main-price {
+    color: var(--color-second)
+}
+
+.re__recipe-content_message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.re__recipe-content_buttons button {
+    padding: 5px 0;
+    width: 60px;
+    margin: 2px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--color-second);
+}
+.re__recipe-content_buttons button:last-child {
+    color: darkred;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .re__recipe {
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .re__recipe-content .re__recipe-content_main-header, .re__recipe-content .re__recipe-content_main-price {
+        font-size: 20px;
+    }
+    .re__recipe-content p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}

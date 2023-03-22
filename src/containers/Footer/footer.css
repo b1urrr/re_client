@@ -1,0 +1,30 @@
+.re__footer {
+    background-color: var(--color-third);
+}
+
+.re__footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.re__footer-content p {
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+.re__footer-content a:hover {
+    color: var(--color-second);
+}
+
+@media screen and (max-width: 750px) {
+    .re__footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .re__footer-content p {
+        margin: 10px;
+    }
+}

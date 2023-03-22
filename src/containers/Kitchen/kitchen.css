@@ -1,0 +1,107 @@
+.re__kitchen {
+    display: flex;
+    flex-direction: column;
+}
+
+.re__kitchen-heading {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.re__kitchen-heading h1 {
+    font-family: var(--font-family);
+    font-size: 50px;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.re__kitchen-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.re__kitchen-container_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.re__kitchen-container_content p {
+    font-family: var(--font-family);
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.re__kitchen-container_content button {
+    background-color: var(--color-second);
+    border: 2px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: var(--color-bg);
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 1.3rem 3rem;
+    text-align: center;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    width: 250px;
+    margin: 2rem;
+}
+      
+.re__kitchen-container_content button:hover {
+    background-color: var(--color-bg);
+    color: var(--color-second);
+    border: 2px solid var(--color-second)
+}
+
+
+.re__kitchen-container_image img {
+    width: 600px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .re__kitchen-container_image img {
+        width: 450px;
+    }
+
+    .re__kitchen-heading h1 {
+        font-size: 40px;
+
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .re__kitchen-container_content {
+        padding: 0;
+    }
+
+    .re__kitchen-container {
+        flex-direction: column-reverse;
+    }
+
+    .re__kitchen-container_image img {
+        margin-bottom: 3rem;
+        width: 350px;
+    }
+
+    .re__kitchen-container_content p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,42 @@
+.re__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.re__contacts h1 {
+    font-family: var(--font-family);
+    font-size: 50px;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.re__contacts-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.re__contacts-contents_phone, .re__contacts-contents_address, .re__contacts-contents_workhours {
+    padding: 3rem;
+    text-align: center;
+    font-size: 50px;
+}
+
+.re__contacts-contents_phone p, .re__contacts-contents_address p, .re__contacts-contents_workhours p {
+    font-family: var(--font-family);
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 990px) {
+    .re__contacts-contents {
+        flex-direction: column;
+    }
+}

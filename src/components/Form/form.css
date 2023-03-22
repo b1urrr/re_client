@@ -1,0 +1,41 @@
+.re__form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.re__form h1 {
+    font-family: var(--font-family);
+    color: var(--color-second)
+}
+
+.re__form input, .re__form select {
+    min-width: 500px;
+    min-height: 40px;
+    margin: 5px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px
+}
+
+.re__form button {
+    width: 500px;
+    height: 40px;
+    background-color: var(--color-second);
+    color: var(--color-bg);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.re__form button:hover {
+    background-color: var(--color-bg);
+    color: var(--color-second);
+    border: 2px solid var(--color-second);
+    cursor: pointer;
+} 
