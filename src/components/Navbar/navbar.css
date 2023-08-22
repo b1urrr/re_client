@@ -1,137 +1,140 @@
 .re__navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 6rem;
-    position: sticky; 
-    top: 0;
-    background-color: rgba(246, 246, 246, 0.9)
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 6rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(246, 246, 246, 0.9);
 }
 
 .re__navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .re__navbar-links_logo {
-    margin-right: 2rem;
-    margin-top: 2px;
+  margin-right: 2rem;
+  margin-top: 2px;
 }
 
 .re__navbar-links_logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .re__navbar-links_container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .re__navbar-sign {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .re__navbar-links_container p,
-.re__navbar-sign p, 
+.re__navbar-sign p,
 .re__navbar-menu_container p {
-    color: var(--color-primary);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
-    margin: 0 1.5rem;
-    cursor: pointer;
-
+  color: var(--color-primary);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1.5rem;
+  cursor: pointer;
 }
 
 .re__navbar-links_container p:hover,
-.re__navbar-sign p:hover, 
+.re__navbar-sign p:hover,
 .re__navbar-menu_container p:hover {
-    color: var(--color-second);
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 2px;
+  color: var(--color-second);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
 }
 
 .re__navbar-menu {
-    margin-left: 1rem;
-    display: none;
-    position: relative;
+  margin-left: 1rem;
+  display: none;
+  position: relative;
 }
 
 .re__navbar-menu svg {
-    cursor: pointer;
-    fill: var(--color-primary)
+  cursor: pointer;
+  fill: var(--color-primary);
 }
 
 .re__navbar-menu_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    text-align: end;
-    background: var(--color-bg);
-    padding: 2rem;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
-    border: 2px solid var(--color-primary);
-    box-shadow: 0 0 5 rgba(0, 0 ,0 , 0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-bg);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
 .re__navbar-menu_container p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .re__navbar-menu_container-links {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 1110px) {
-    .re__navbar {
-        position: static; 
-        top: 0;
-    }
+  .re__navbar {
+    position: static;
+    top: 0;
+  }
 
-    .re__navbar-menu_container p {
-        margin: 0
-    }
+  .re__navbar-menu_container p {
+    margin: 0;
+  }
 
-    .re__navbar-links {
-        justify-content: space-between;
-    }
+  .re__navbar-links {
+    justify-content: space-between;
+  }
 
-    .re__navbar-links_container {
-        display: none;
-    }
+  .re__navbar-links_container {
+    display: none;
+  }
 
-    .re__navbar-menu {
-        display: flex;
-    }
+  .re__navbar-menu {
+    display: flex;
+  }
+
+  .re__navbar-links_container p:hover,
+  .re__navbar-sign p:hover,
+  .re__navbar-menu_container p:hover {
+    text-underline-offset: 5px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .re__navbar {
-        padding: 1rem 2rem;
-    }
+  .re__navbar {
+    padding: 1rem 2rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
+  .re__navbar-sign {
+    display: none;
+  }
 
-    .re__navbar-sign {
-        display: none;
-    }
-
-    .re__navbar-menu_container-links-sign {
-        display: block;
-    }
+  .re__navbar-menu_container-links-sign {
+    display: block;
+  }
 }
-

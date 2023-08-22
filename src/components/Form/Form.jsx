@@ -20,7 +20,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
     useEffect(() => {
         if(recipe) setRecipeData(recipe);
-    }, [recipe])
+    }, [])
 
     const handleSubmit = (e) => {
         // e.preventDefault();

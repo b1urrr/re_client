@@ -11,8 +11,6 @@ import { getMenu } from './actions/menu';
 
 
 import './App.css';
-
-
 const App = () => {
 
   const dispatch = useDispatch();

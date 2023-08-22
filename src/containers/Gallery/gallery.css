@@ -1,101 +1,102 @@
 .re__gallery-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .re__gallery-heading h1 {
-    font-family: var(--font-family);
-    font-size: 50px;
-    color: var(--color-primary);
-    font-weight: 700;
-    margin-bottom: 3rem;
-    text-align: center;
+  font-family: var(--font-family);
+  font-size: 50px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
-
 .re__gallery-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .re__gallery-wrap .single {
-    width: 300px;
-    cursor: pointer;
+  width: 300px;
+  cursor: pointer;
 }
 
 .re__gallery-wrap .single img {
-    max-width: 100%;
-
+  max-width: 100%;
 }
 
 .re__gallery-wrap .single img:hover {
-    transform: scale(1.04);
-
+  transform: scale(1.04);
 }
 
 .slider-wrap {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.slider-wrap .btn-close, .slider-wrap .btn-previous, .slider-wrap .btn-next {
-    position: fixed;
-    cursor: pointer;
-    opacity: 0.6;
-    color: #fff;
-    z-index: 9999;
+.slider-wrap .btn-close,
+.slider-wrap .btn-previous,
+.slider-wrap .btn-next {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
 }
 
-.btn-close:hover, .btn-previous:hover, .btn-next:hover {
-    opacity: 1;
+.btn-close:hover,
+.btn-previous:hover,
+.btn-next:hover {
+  opacity: 1;
 }
 
 .btn-close {
-    top: 40px;
-    right: 40px;
-    font-size: 40px;
+  top: 40px;
+  right: 40px;
+  font-size: 40px;
 }
 
 .slider-wrap .btn-previous {
-    top: 50%;
-    transform: translateY(-50%);
-    left: 40px;
-    font-size: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+  font-size: 40px;
 }
 
 .slider-wrap .btn-next {
-    top: 50%;
-    transform: translateY(-50%);
-    right: 40px;
-    font-size: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+  font-size: 40px;
 }
 .full-screen {
-    width: calc(100%-40px);
-    height: calc(100%-40px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: calc(100%-40px);
+  height: calc(100%-40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .full-screen img {
-    max-width: 100%;
-    max-height: 100%;
-    pointer-events: none;
-    user-select: none;
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  user-select: none;
 }
